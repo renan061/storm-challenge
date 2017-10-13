@@ -14,6 +14,8 @@
 		753B554E1F9153DA00FB3548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753B554C1F9153DA00FB3548 /* LaunchScreen.storyboard */; };
 		753B55591F9153DA00FB3548 /* StormChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55581F9153DA00FB3548 /* StormChallengeTests.swift */; };
 		753B55641F9153DA00FB3548 /* StormChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55631F9153DA00FB3548 /* StormChallengeUITests.swift */; };
+		753B55771F9155D200FB3548 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55761F9155D200FB3548 /* Video.swift */; };
+		753B557A1F9159EC00FB3548 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55791F9159EC00FB3548 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		753B555F1F9153DA00FB3548 /* StormChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753B55631F9153DA00FB3548 /* StormChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormChallengeUITests.swift; sourceTree = "<group>"; };
 		753B55651F9153DA00FB3548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753B55761F9155D200FB3548 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = Model/Video.swift; sourceTree = "<group>"; };
+		753B55791F9159EC00FB3548 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,10 @@
 		753B55421F9153DA00FB3548 /* StormChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				753B55431F9153DA00FB3548 /* AppDelegate.swift */,
-				753B55451F9153DA00FB3548 /* ViewController.swift */,
-				753B55471F9153DA00FB3548 /* Main.storyboard */,
-				753B554A1F9153DA00FB3548 /* Assets.xcassets */,
-				753B554C1F9153DA00FB3548 /* LaunchScreen.storyboard */,
-				753B554F1F9153DA00FB3548 /* Info.plist */,
+				753B55751F9154EA00FB3548 /* Model */,
+				753B55741F9154E400FB3548 /* Controller */,
+				753B55731F9154DE00FB3548 /* View */,
+				753B55721F9154BA00FB3548 /* Miscellaneous */,
 			);
 			path = StormChallenge;
 			sourceTree = "<group>";
@@ -123,6 +125,50 @@
 				753B55651F9153DA00FB3548 /* Info.plist */,
 			);
 			path = StormChallengeUITests;
+			sourceTree = "<group>";
+		};
+		753B55721F9154BA00FB3548 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				753B55431F9153DA00FB3548 /* AppDelegate.swift */,
+				753B554C1F9153DA00FB3548 /* LaunchScreen.storyboard */,
+				753B554A1F9153DA00FB3548 /* Assets.xcassets */,
+				753B554F1F9153DA00FB3548 /* Info.plist */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		753B55731F9154DE00FB3548 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				753B55471F9153DA00FB3548 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		753B55741F9154E400FB3548 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				753B55451F9153DA00FB3548 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		753B55751F9154EA00FB3548 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				753B55781F9155D900FB3548 /* Domain */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		753B55781F9155D900FB3548 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				753B55761F9155D200FB3548 /* Video.swift */,
+				753B55791F9159EC00FB3548 /* Article.swift */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753B557A1F9159EC00FB3548 /* Article.swift in Sources */,
 				753B55461F9153DA00FB3548 /* ViewController.swift in Sources */,
+				753B55771F9155D200FB3548 /* Video.swift in Sources */,
 				753B55441F9153DA00FB3548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
