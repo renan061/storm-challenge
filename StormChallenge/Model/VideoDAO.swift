@@ -7,11 +7,11 @@
 //
 
 protocol VideoDAO {
-    static func getVideos(callback: ([Video]?) -> ())
+    func getVideos(callback: ([Video]?) -> ())
 }
 
 class VideoDAOImpl: VideoDAO {
-    static func getVideos(callback: ([Video]?) -> ()) {
+    func getVideos(callback: ([Video]?) -> ()) {
         // Here is where I would program the real VideoDAO
         // Since this is only a demo, look at the mocks group
         callback(nil)

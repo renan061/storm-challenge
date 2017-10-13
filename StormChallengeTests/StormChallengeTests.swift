@@ -10,27 +10,21 @@ import XCTest
 @testable import StormChallenge
 
 class StormChallengeTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testVideoLinks() {
+        let dao: VideoDAO = VideoDAOMock()
+        dao.getVideos { videos in
+            XCTAssertNotNil(videos)
+            let videos = videos!
+            XCTAssertEqual(videos.count, 4)
+            XCTAssertEqual(videos[0].videos.count, 0)
+            XCTAssertEqual(videos[1].videos.count, 1)
+            XCTAssertEqual(videos[2].videos.count, 2)
+            XCTAssertEqual(videos[3].videos.count, 2)
+            XCTAssertEqual(videos[1].videos.first!.title, videos[0].title)
+            XCTAssertEqual(videos[2].videos.first!.title, videos[0].title)
+            XCTAssertEqual(videos[2].videos[1].title, videos[3].title)
+            XCTAssertEqual(videos[3].videos.first!.title, videos[0].title)
+            XCTAssertEqual(videos[3].videos[1].title, videos[2].title)
         }
     }
-    
 }

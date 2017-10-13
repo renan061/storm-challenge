@@ -7,7 +7,7 @@
 //
 
 class ArticleDAOMock: ArticleDAO {
-    static func getArticles(callback: ([Article]?) -> ()) {
+    func getArticles(callback: ([Article]?) -> ()) {
         callback([
             Article(items: [
                 (Article.ItemType.Text, "TODO: Text 1"),

@@ -7,11 +7,11 @@
 //
 
 protocol ArticleDAO {
-    static func getArticles(callback: ([Article]?) -> ())
+    func getArticles(callback: ([Article]?) -> ())
 }
 
 class ArticleDAOImpl: ArticleDAO {
-    static func getArticles(callback: ([Article]?) -> ()) {
+    func getArticles(callback: ([Article]?) -> ()) {
         // Here is where I would program the real ArticleDAO
         // Since this is only a demo, look at the mocks group
         callback(nil)

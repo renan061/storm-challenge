@@ -7,7 +7,7 @@
 //
 
 class VideoDAOMock: VideoDAO {
-    static func getVideos(callback: ([Video]?) -> ()) {
+    func getVideos(callback: ([Video]?) -> ()) {
         var videos = [
             // Wuba Duba Lub Lub
             Video(
@@ -40,10 +40,8 @@ class VideoDAOMock: VideoDAO {
         ]
         
         videos[1].link(video: videos[0])
-        videos[2].link(video: videos[0])
-        videos[2].link(video: videos[3])
-        videos[3].link(video: videos[0])
-        videos[3].link(video: videos[2])
+        videos[2].link(videos: [videos[0], videos[3]])
+        videos[3].link(videos: [videos[0], videos[2]])
         
         callback(videos)
     }
