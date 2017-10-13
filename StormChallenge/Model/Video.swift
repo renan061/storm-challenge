@@ -6,21 +6,32 @@
 //  Copyright © 2017 Renan Almeida. All rights reserved.
 //
 
-class Video {
+// Struct to avoid circular pointer references and ARC problems
+struct Video {
+    let url: String
+
     let title: String
     
     let description: String
     
     let tags: [String]
     
-    let videos: [Video]
+    private(set) var videos = [Video]()
     
     var isFavorite: Bool = false
     
-    init(title: String, description: String, tags: [String], videos: [Video]) {
+    init(url: String, title: String, description: String, tags: [String]) {
+        self.url = url
         self.title = title
         self.description = description
         self.tags = tags
-        self.videos = videos
+    }
+    
+    mutating func link(video: Video) {
+        self.videos.append(video)
+    }
+    
+    mutating func link(videos: [Video]) {
+        self.videos.append(contentsOf: videos)
     }
 }

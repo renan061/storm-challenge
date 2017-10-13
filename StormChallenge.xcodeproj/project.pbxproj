@@ -16,6 +16,10 @@
 		753B55641F9153DA00FB3548 /* StormChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55631F9153DA00FB3548 /* StormChallengeUITests.swift */; };
 		753B55771F9155D200FB3548 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55761F9155D200FB3548 /* Video.swift */; };
 		753B557A1F9159EC00FB3548 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55791F9159EC00FB3548 /* Article.swift */; };
+		753B557F1F915C2300FB3548 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B557E1F915C2300FB3548 /* VideoDAO.swift */; };
+		753B55811F915C3000FB3548 /* ArticleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55801F915C3000FB3548 /* ArticleDAO.swift */; };
+		753B55851F915E0D00FB3548 /* ArticleDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */; };
+		753B55891F915E3400FB3548 /* VideoDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55881F915E3400FB3548 /* VideoDAOMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		753B55651F9153DA00FB3548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753B55761F9155D200FB3548 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = Model/Video.swift; sourceTree = "<group>"; };
 		753B55791F9159EC00FB3548 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
+		753B557E1F915C2300FB3548 /* VideoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDAO.swift; path = Model/VideoDAO.swift; sourceTree = "<group>"; };
+		753B55801F915C3000FB3548 /* ArticleDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDAO.swift; path = Model/ArticleDAO.swift; sourceTree = "<group>"; };
+		753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDAOMock.swift; path = Model/ArticleDAOMock.swift; sourceTree = "<group>"; };
+		753B55881F915E3400FB3548 /* VideoDAOMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDAOMock.swift; path = Model/VideoDAOMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,7 @@
 		753B55751F9154EA00FB3548 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				753B557B1F915BA600FB3548 /* DAL */,
 				753B55781F9155D900FB3548 /* Domain */,
 			);
 			name = Model;
@@ -169,6 +178,25 @@
 				753B55791F9159EC00FB3548 /* Article.swift */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		753B557B1F915BA600FB3548 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				753B55831F915DE900FB3548 /* Mocks */,
+				753B557E1F915C2300FB3548 /* VideoDAO.swift */,
+				753B55801F915C3000FB3548 /* ArticleDAO.swift */,
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
+		753B55831F915DE900FB3548 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */,
+				753B55881F915E3400FB3548 /* VideoDAOMock.swift */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				753B557A1F9159EC00FB3548 /* Article.swift in Sources */,
+				753B557F1F915C2300FB3548 /* VideoDAO.swift in Sources */,
+				753B55891F915E3400FB3548 /* VideoDAOMock.swift in Sources */,
 				753B55461F9153DA00FB3548 /* ViewController.swift in Sources */,
+				753B55811F915C3000FB3548 /* ArticleDAO.swift in Sources */,
 				753B55771F9155D200FB3548 /* Video.swift in Sources */,
+				753B55851F915E0D00FB3548 /* ArticleDAOMock.swift in Sources */,
 				753B55441F9153DA00FB3548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
