@@ -8,11 +8,31 @@
 
 import UIKit
 
-class ArticleViewController: UIViewController {
+class ArticleViewController: UITableViewController {
     var article: Article!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(article.items.first!.0)
+    // UITableViewController
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.article.items.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "article-item-cell", for: indexPath)
+        
+        let item = article.items[indexPath.row]
+        switch item.0 {
+        case Article.ItemType.Image:
+            // TODO: UIImage
+            cell.textLabel?.text = item.1
+        case Article.ItemType.Text:
+            cell.textLabel?.text = item.1
+        }
+        
+        return cell
     }
 }

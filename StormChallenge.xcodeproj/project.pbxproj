@@ -14,7 +14,6 @@
 		753B554B1F9153DA00FB3548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753B554A1F9153DA00FB3548 /* Assets.xcassets */; };
 		753B554E1F9153DA00FB3548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753B554C1F9153DA00FB3548 /* LaunchScreen.storyboard */; };
 		753B55591F9153DA00FB3548 /* StormChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55581F9153DA00FB3548 /* StormChallengeTests.swift */; };
-		753B55641F9153DA00FB3548 /* StormChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55631F9153DA00FB3548 /* StormChallengeUITests.swift */; };
 		753B55771F9155D200FB3548 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55761F9155D200FB3548 /* Video.swift */; };
 		753B557A1F9159EC00FB3548 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55791F9159EC00FB3548 /* Article.swift */; };
 		753B557F1F915C2300FB3548 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B557E1F915C2300FB3548 /* VideoDAO.swift */; };
@@ -55,8 +54,6 @@
 		753B55581F9153DA00FB3548 /* StormChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormChallengeTests.swift; sourceTree = "<group>"; };
 		753B555A1F9153DA00FB3548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753B555F1F9153DA00FB3548 /* StormChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		753B55631F9153DA00FB3548 /* StormChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormChallengeUITests.swift; sourceTree = "<group>"; };
-		753B55651F9153DA00FB3548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753B55761F9155D200FB3548 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = Model/Video.swift; sourceTree = "<group>"; };
 		753B55791F9159EC00FB3548 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
 		753B557E1F915C2300FB3548 /* VideoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDAO.swift; path = Model/VideoDAO.swift; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 			children = (
 				753B55421F9153DA00FB3548 /* StormChallenge */,
 				753B55571F9153DA00FB3548 /* StormChallengeTests */,
-				753B55621F9153DA00FB3548 /* StormChallengeUITests */,
 				753B55411F9153DA00FB3548 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,15 +126,6 @@
 				753B555A1F9153DA00FB3548 /* Info.plist */,
 			);
 			path = StormChallengeTests;
-			sourceTree = "<group>";
-		};
-		753B55621F9153DA00FB3548 /* StormChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				753B55631F9153DA00FB3548 /* StormChallengeUITests.swift */,
-				753B55651F9153DA00FB3548 /* Info.plist */,
-			);
-			path = StormChallengeUITests;
 			sourceTree = "<group>";
 		};
 		753B55721F9154BA00FB3548 /* Miscellaneous */ = {
@@ -368,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753B55641F9153DA00FB3548 /* StormChallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
