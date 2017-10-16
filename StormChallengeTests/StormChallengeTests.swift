@@ -10,8 +10,9 @@ import XCTest
 @testable import StormChallenge
 
 class StormChallengeTests: XCTestCase {
+    let dao: VideoDAO = VideoDAOMock()
+
     func testVideoLinks() {
-        let dao: VideoDAO = VideoDAOMock()
         dao.getVideos { videos in
             XCTAssertNotNil(videos)
             let videos = videos!

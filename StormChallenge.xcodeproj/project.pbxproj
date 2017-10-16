@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7535CE191F9422A300886591 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535CE181F9422A300886591 /* ListViewController.swift */; };
+		7535CE1B1F9422FD00886591 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535CE1A1F9422FD00886591 /* VideoViewController.swift */; };
 		753B55441F9153DA00FB3548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55431F9153DA00FB3548 /* AppDelegate.swift */; };
-		753B55461F9153DA00FB3548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55451F9153DA00FB3548 /* ViewController.swift */; };
 		753B55491F9153DA00FB3548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753B55471F9153DA00FB3548 /* Main.storyboard */; };
 		753B554B1F9153DA00FB3548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753B554A1F9153DA00FB3548 /* Assets.xcassets */; };
 		753B554E1F9153DA00FB3548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753B554C1F9153DA00FB3548 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,9 @@
 		753B55811F915C3000FB3548 /* ArticleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55801F915C3000FB3548 /* ArticleDAO.swift */; };
 		753B55851F915E0D00FB3548 /* ArticleDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */; };
 		753B55891F915E3400FB3548 /* VideoDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55881F915E3400FB3548 /* VideoDAOMock.swift */; };
+		75B6ECAC1F94273C00522BF3 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6ECAB1F94273C00522BF3 /* ContentRepository.swift */; };
+		75B6ECAE1F943ABE00522BF3 /* ListViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6ECAD1F943ABE00522BF3 /* ListViewControllerCell.swift */; };
+		75B6ECB01F94429B00522BF3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6ECAF1F94429B00522BF3 /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7535CE181F9422A300886591 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Controller/ListViewController.swift; sourceTree = "<group>"; };
+		7535CE1A1F9422FD00886591 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = Controller/VideoViewController.swift; sourceTree = "<group>"; };
 		753B55401F9153DA00FB3548 /* StormChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		753B55431F9153DA00FB3548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		753B55451F9153DA00FB3548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		753B55481F9153DA00FB3548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		753B554A1F9153DA00FB3548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753B554D1F9153DA00FB3548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		753B55801F915C3000FB3548 /* ArticleDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDAO.swift; path = Model/ArticleDAO.swift; sourceTree = "<group>"; };
 		753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDAOMock.swift; path = Model/ArticleDAOMock.swift; sourceTree = "<group>"; };
 		753B55881F915E3400FB3548 /* VideoDAOMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDAOMock.swift; path = Model/VideoDAOMock.swift; sourceTree = "<group>"; };
+		75B6ECAB1F94273C00522BF3 /* ContentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentRepository.swift; path = Model/ContentRepository.swift; sourceTree = "<group>"; };
+		75B6ECAD1F943ABE00522BF3 /* ListViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewControllerCell.swift; path = View/ListViewControllerCell.swift; sourceTree = "<group>"; };
+		75B6ECAF1F94429B00522BF3 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = Controller/ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				753B55471F9153DA00FB3548 /* Main.storyboard */,
+				75B6ECAD1F943ABE00522BF3 /* ListViewControllerCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -157,7 +166,9 @@
 		753B55741F9154E400FB3548 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				753B55451F9153DA00FB3548 /* ViewController.swift */,
+				7535CE181F9422A300886591 /* ListViewController.swift */,
+				7535CE1A1F9422FD00886591 /* VideoViewController.swift */,
+				75B6ECAF1F94429B00522BF3 /* ArticleViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,6 +197,7 @@
 				753B55831F915DE900FB3548 /* Mocks */,
 				753B557E1F915C2300FB3548 /* VideoDAO.swift */,
 				753B55801F915C3000FB3548 /* ArticleDAO.swift */,
+				75B6ECAB1F94273C00522BF3 /* ContentRepository.swift */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -336,10 +348,14 @@
 				753B557A1F9159EC00FB3548 /* Article.swift in Sources */,
 				753B557F1F915C2300FB3548 /* VideoDAO.swift in Sources */,
 				753B55891F915E3400FB3548 /* VideoDAOMock.swift in Sources */,
-				753B55461F9153DA00FB3548 /* ViewController.swift in Sources */,
+				7535CE1B1F9422FD00886591 /* VideoViewController.swift in Sources */,
+				75B6ECAE1F943ABE00522BF3 /* ListViewControllerCell.swift in Sources */,
 				753B55811F915C3000FB3548 /* ArticleDAO.swift in Sources */,
+				75B6ECB01F94429B00522BF3 /* ArticleViewController.swift in Sources */,
+				75B6ECAC1F94273C00522BF3 /* ContentRepository.swift in Sources */,
 				753B55771F9155D200FB3548 /* Video.swift in Sources */,
 				753B55851F915E0D00FB3548 /* ArticleDAOMock.swift in Sources */,
+				7535CE191F9422A300886591 /* ListViewController.swift in Sources */,
 				753B55441F9153DA00FB3548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +601,7 @@
 				753B556A1F9153DA00FB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753B556B1F9153DA00FB3548 /* Build configuration list for PBXNativeTarget "StormChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +610,7 @@
 				753B556D1F9153DA00FB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753B556E1F9153DA00FB3548 /* Build configuration list for PBXNativeTarget "StormChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +619,7 @@
 				753B55701F9153DA00FB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

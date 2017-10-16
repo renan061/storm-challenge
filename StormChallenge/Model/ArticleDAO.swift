@@ -6,6 +6,7 @@
 //  Copyright © 2017 Renan Almeida. All rights reserved.
 //
 
+// Protocol to allow model layer mocks and facilitate testing
 protocol ArticleDAO {
     func getArticles(callback: ([Article]?) -> ())
 }
