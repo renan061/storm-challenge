@@ -7,6 +7,7 @@
 //
 
 class Article {
+    let title: String
     enum ItemType {
         case Image
         case Text
@@ -16,7 +17,8 @@ class Article {
     
     var isFavorite: Bool = false
     
-    init(items: [(ItemType, String)]) {
+    init(title: String, items: [(ItemType, String)]) {
+        self.title = title
         self.items = items
     }
 }

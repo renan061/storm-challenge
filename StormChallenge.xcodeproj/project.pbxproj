@@ -22,7 +22,6 @@
 		753B55851F915E0D00FB3548 /* ArticleDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */; };
 		753B55891F915E3400FB3548 /* VideoDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B55881F915E3400FB3548 /* VideoDAOMock.swift */; };
 		75B6ECAC1F94273C00522BF3 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6ECAB1F94273C00522BF3 /* ContentRepository.swift */; };
-		75B6ECAE1F943ABE00522BF3 /* ListViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6ECAD1F943ABE00522BF3 /* ListViewControllerCell.swift */; };
 		75B6ECB01F94429B00522BF3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B6ECAF1F94429B00522BF3 /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		753B55841F915E0D00FB3548 /* ArticleDAOMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDAOMock.swift; path = Model/ArticleDAOMock.swift; sourceTree = "<group>"; };
 		753B55881F915E3400FB3548 /* VideoDAOMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDAOMock.swift; path = Model/VideoDAOMock.swift; sourceTree = "<group>"; };
 		75B6ECAB1F94273C00522BF3 /* ContentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentRepository.swift; path = Model/ContentRepository.swift; sourceTree = "<group>"; };
-		75B6ECAD1F943ABE00522BF3 /* ListViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewControllerCell.swift; path = View/ListViewControllerCell.swift; sourceTree = "<group>"; };
 		75B6ECAF1F94429B00522BF3 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = Controller/ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				753B55471F9153DA00FB3548 /* Main.storyboard */,
-				75B6ECAD1F943ABE00522BF3 /* ListViewControllerCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -349,7 +346,6 @@
 				753B557F1F915C2300FB3548 /* VideoDAO.swift in Sources */,
 				753B55891F915E3400FB3548 /* VideoDAOMock.swift in Sources */,
 				7535CE1B1F9422FD00886591 /* VideoViewController.swift in Sources */,
-				75B6ECAE1F943ABE00522BF3 /* ListViewControllerCell.swift in Sources */,
 				753B55811F915C3000FB3548 /* ArticleDAO.swift in Sources */,
 				75B6ECB01F94429B00522BF3 /* ArticleViewController.swift in Sources */,
 				75B6ECAC1F94273C00522BF3 /* ContentRepository.swift in Sources */,

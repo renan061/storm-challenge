@@ -9,12 +9,12 @@
 class ArticleDAOMock: ArticleDAO {
     func getArticles(callback: ([Article]?) -> ()) {
         callback([
-            Article(items: [
+            Article(title: "Artigo 1", items: [
                 (Article.ItemType.Text, "TODO: Text 1"),
                 (Article.ItemType.Image, "TODO: Url 1"),
                 (Article.ItemType.Text, "TODO: Text 1")
             ]),
-            Article(items: [
+            Article(title: "Artigo 2", items: [
                 (Article.ItemType.Text, "TODO: Text 2"),
                 (Article.ItemType.Image, "TODO: Url 2"),
                 (Article.ItemType.Text, "TODO: Text 2")

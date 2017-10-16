@@ -6,8 +6,7 @@
 //  Copyright © 2017 Renan Almeida. All rights reserved.
 //
 
-// Struct to avoid circular pointer references and ARC problems
-struct Video {
+class Video {
     let url: String
 
     let title: String
@@ -27,11 +26,11 @@ struct Video {
         self.tags = tags
     }
     
-    mutating func link(video: Video) {
+    func link(video: Video) {
         self.videos.append(video)
     }
     
-    mutating func link(videos: [Video]) {
+    func link(videos: [Video]) {
         self.videos.append(contentsOf: videos)
     }
 }

@@ -26,6 +26,11 @@ class ListViewController: UITableViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ArticleViewController {
             destination.article = sender as! Article
@@ -47,13 +52,15 @@ class ListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: ListViewControllerCell = tableView.dequeueReusableCell(withIdentifier: "video-article-cell", for: indexPath) as! ListViewControllerCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "content-cell", for: indexPath)
         
         let pair = self.contents[indexPath.row]
         if let article = pair.0 {
-            cell.setup(title: article.items.first!.1, description: "todo")
+            cell.textLabel?.text = article.title
+            cell.detailTextLabel?.text = ""
         } else if let video = pair.1 {
-            cell.setup(title: video.title, description: video.description)
+            cell.textLabel?.text = "\(video.title) \(video.isFavorite ? "*" : "")"
+            cell.detailTextLabel?.text = video.description
         } else {
             fatalError()
         }
